@@ -1,11 +1,8 @@
-# 방법1
+# 방법2
 while True:
-  s = list(input().split())
-  a = s[0]
-  if a == '#':
+  s = input()
+  if s == '#':
     break
-  
-  cnt = 0
-  for i in range(1, len(s)):
-    cnt += s[i].lower().count(a)
-  print(a, cnt)
+  a = s[0]
+  b = s[2:].lower()
+  print(a,b.count(a))
