@@ -1,16 +1,8 @@
-# 방법1
-def t(n):
-  hap = 0
-  for i in range(1,n+1):
-    hap += i
-  return hap
-
-def w(n):
-  hap = 0
-  for i in range(1,n+1):
-    hap += (i*t(i+1))
-  return hap
+# 방법2
+# import sys
+# input = sys.stdin.readline
 
 for _ in range(int(input())):
   n = int(input())
-  print(w(n))
+  hap = sum(k*sum(range(k+2)) for k in range(1, n+1))
+  print(hap)
