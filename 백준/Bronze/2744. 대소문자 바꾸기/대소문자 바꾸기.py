@@ -1,8 +1,7 @@
-letter = input()
 new = ''
-for i in range(len(letter)):
-  if letter[i].islower():
-    new += letter[i].upper()
+for i in input():
+  if i.islower():
+    new += i.upper()
   else:
-    new += letter[i].lower()
+    new += i.lower()
 print(new)
