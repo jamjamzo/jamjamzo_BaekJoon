@@ -1,0 +1,5 @@
+n = int(input())
+yaksu_list = list(map(int, input().split()))
+a = min(yaksu_list)
+b = max(yaksu_list)
+print(a*b)
